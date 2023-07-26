@@ -9,16 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="ECommerce.css">
+  <link rel="stylesheet" href="/Files/CSS/ECommerce.css">
   <!-- PAGE ICON -->
   <link rel="shortcut icon" href="image.jpg" type="image/x-icon"> 
   <link rel="icon" type="image/jpg" href="image.jpg" sizes="16x16">
 
   <!-- Font Awesome / Version: 5.15.4 / Use: <i class="fas fa-shopping-bag"></i> -->
-  <script src="https://kit.fontawesome.com/a46ed112f9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a46ed112f9.js"></script>
   
   <!-- Cloudfare/FontAwsome / Version: 6.4.0 / Use: <i class="fa-solid fa-bag-shopping"></i> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
 <body> 
@@ -28,16 +28,23 @@
 
     <div>
       <ul id="navbar">
-        <li><a href="ECommerce.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <li><a class="active" href="ECommerce.html">Home</a></li> <!-- class="active" has a specific style -->
+        <li><a href="/Files/HTML/shop.html">Shop</a></li>
+        <li><a href="/Files/HTML/blog.html">Blog</a></li>
+        <li><a href="/Files/HTML/about.html">About</a></li>
+        <li><a href="/Files/HTML/contact.html">Contact</a></li>
+        <li><a href="/Files/HTML/cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
       </ul>
     </div>
   </section>
 
+  <section id="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons & up to 70% off!</p>
+    <button>Shop Now</button>
+  </section>
 
   <script src="ECommerce.js"></script>
 </body>
