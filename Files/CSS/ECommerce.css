@@ -60,7 +60,7 @@ button.white {
   cursor: pointer;
   border: 1px solid #fff;
   outline: none;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
 body {
@@ -199,6 +199,7 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px;
+  cursor: pointer;
 }
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
@@ -327,8 +328,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* background-image: url(); is supposed to have a background image but for now we use background color */
-  background: linear-gradient(146deg, rgba(242,205,135,1) 2%, rgba(247,155,26,1) 45%);  
+  background-image: url(/Images/Banners/img2.jpg);
+  /* background: linear-gradient(146deg, rgba(242,205,135,1) 2%, rgba(247,155,26,1) 45%); */  
   min-width: 580px;
   height: 50vh;
   background-size: cover;
@@ -336,7 +337,8 @@ body {
   padding: 30px;
 }
 #sm-banner .banner-box2 {
-  background: linear-gradient(331deg, rgba(0,0,0,1) 0%, rgba(8,129,120,1) 100%);
+  background-image: url(/Images/Banners/img3.jpg );
+  /* background: linear-gradient(331deg, rgba(0,0,0,1) 0%, rgba(8,129,120,1) 100%); */
 }
 #sm-banner h4 {
   color: #fff;
@@ -354,7 +356,91 @@ body {
   font-weight: 500;
   padding-bottom: 15px;
 }
-#sm-bannner .banner-box:hover {
-   background: #088178;
-   border: 1px solid #088178;
+button.white:hover {
+  background: #088178;
+  border: 1px solid #088178;
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(/Images/Banners/img7.jpg);
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#banner3 .banner-box2 {
+  background-image: url(/Images/Banners/img8.jpg);
+}
+#banner3 .banner-box3 {
+  background-image: url(/Images/Banners/img9.jpg);
+}
+#banner3 h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+}
+#banner3 h3 {
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url();
+  background: #0B1D51;
+}
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+#newsletter p span {
+  color: #ffbd27;
+}
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button {
+  color: #fff;
+  background-color: #088178;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+footer a {
+
 }
