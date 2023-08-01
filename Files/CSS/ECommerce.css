@@ -286,7 +286,7 @@ body {
   color: #088178;
 }
 #product1 .product .fa-cart-shopping, .fa-solid {
-
+  /* on html */
 }
 
 #banner {
@@ -403,7 +403,7 @@ button.white:hover {
   flex-wrap: wrap;
   align-items: center;
   background-image: url();
-  background: #0B1D51;
+  background: #465052/* #0B1D51 */;
 }
 #newsletter h4 {
   font-size: 22px;
@@ -441,6 +441,45 @@ button.white:hover {
   border-bottom-left-radius: 0;
 }
 
+footer {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo {
+  margin-bottom: 30px;
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
 footer a {
-
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+footer .follow {
+  margin-top: 20px;
+}
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img {
+  width: 120px;
+  border: 3px solid #088178;
+  border-radius: 6px;
+  padding: 5px 10px;
 }
