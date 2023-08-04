@@ -113,13 +113,24 @@ body {
   left: 20px;
 }
 
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
 /* HOME PAGE */
 #hero {
-  background-image: url();
   height: 90vh;
   width: 100%;
+  /* 
+  background-image: url();
   background-size: cover;
-  background-position: top 25% right 0;
+  background-position: top 25% right 0; 
+  */
   padding: 0 80px;
   display: flex;
   flex-direction: column;
@@ -198,7 +209,7 @@ body {
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
-  margin: 15px;
+  margin: 15px 0;
   cursor: pointer;
 }
 #feature .fe-box:hover {
@@ -491,18 +502,95 @@ footer .copyright {
   text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries - Responsive website */
 @media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  /* For hamburger menu */
   #navbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    position: fixed;
+    position: fixed; /* the hamburger menu will be fixed in the page */
     top: 0;
-    right: 0;
+    right: -300px; /* to hide navbar */
     height: 100vh;
     width: 300px;
-    background-color: #E;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0px 0px 10px;
+    transition: 0.3s; /* allow for a smooth sliding of the navbar from the right */
   }
+  /* class to show navbar | is applied when hamburger menu is clicked | check JS */
+  #navbar.active {
+    right: 0;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 24px;
+  }
+  /* remove cart from navbar in medium screen devices */
+  #cart {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    /* if background-image
+    background-position: top 30% right 30% 
+    */
+  }
+
+  #feature {
+    justify-content: center;
+  }
+  #feature .fe-box {
+    margin: 15px;
+  }
+
+  #product1 .product-container {
+    justify-content: center;
+  }
+  #product1 .product  {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+  #sm-banner .banner-box {
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3 {
+    padding: 0 40px;
+  }
+  #banner3 .banner-box {
+    width: 28%;
+  }
+
+  #newsletter .form {
+    width: 70%;
+  }
+}
+
+@media (max-width:799px) { 
+
 }
