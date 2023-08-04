@@ -637,6 +637,7 @@ footer .copyright {
   }
   #banner {
     height: 40vh;
+    margin: 20px 0;
   }
   #banner h2 {
     line-height: 50px;
@@ -654,5 +655,12 @@ footer .copyright {
   #newsletter {
     text-align: center;
     justify-content: center;
+    margin: 20px 0;
+  }
+  footer {
+    margin: 0 20px; 
+  }
+  footer .logo {
+    margin-bottom: 10px;
   }
 }
