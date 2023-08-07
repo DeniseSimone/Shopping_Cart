@@ -67,6 +67,7 @@ button.white {
 
 body {
  width: 100%;
+ min-width: 340px;
 }
 
 /* HEADER START, NAVBAR */
@@ -127,13 +128,13 @@ body {
 
 /* HOME PAGE */
 #hero {
-  height: 55vh;
+  min-height: 55vh;
   width: 100%;
   background-image: url(/Images/imgs/woman.jpg);
   background-size: 500px;
   background-position: top 0% right 0; 
   background-repeat: repeat-x;
-  padding: 0 80px;
+  padding: 40px 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -241,7 +242,7 @@ body {
 }
 #product1 .product {
   width: 20%;
-  /* min-width: 250px; */
+  min-width: 250px;
   padding: 10px 12px;
   border: 1px solid rgb(149, 162, 134,0.2);
   border-radius: 25px;
@@ -501,7 +502,22 @@ footer .copyright {
   text-align: center;
 }
 
+
+
 /* Media Queries - Responsive website */
+
+
+@media (max-width:1314px) {
+/*  #sm-banner {
+  display: flex;
+ */
+ #sm-banner .banner-box {
+  width: 100%;
+ }
+ #sm-banner {
+  row-gap: 40px;
+ }
+}
 @media (max-width:799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -551,7 +567,7 @@ footer .copyright {
   }
 
   #hero {
-    height: 70vh;
+    height: 50vh;
   }
   #hero h1 {
     text-align: center;
@@ -572,7 +588,7 @@ footer .copyright {
   }
 
   #banner {
-    height: 20vh;
+    height: 30vh;
   }
   #sm-banner {
     row-gap: 40px;
@@ -593,7 +609,77 @@ footer .copyright {
   }
 }
 
-@media (max-width: 477px) { 
+@media (max-width: 580px) { 
+  .section-p1 {
+    padding: 20px
+  }
+  #header {
+    padding: 10px 30px;
+  }
+  #navbar #close {
+    font-size: 20px;
+  }
+  .logo {
+    width: 60px;
+  }
+  #mobile #mobile-cart, #mobile #bar {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 38px
+  }
+  h2 {
+    font-size: 32px;
+  }
+  #hero {
+    padding: 0 20px;
+    align-items: center;
+  }
+  #feature {
+    justify-content: space-around;
+  }
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #product1 p {
+    margin: 0 auto;
+  }
+  #product1 .product {
+    width: 60%;
+  }
+  #banner {
+    height: 30vh;
+    margin: 20px 0;
+  }
+  #banner h2 {
+    line-height: 50px;
+  }
+  #sm-banner {
+    row-gap: 20px;
+  }
+  #banner3 {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  #newsletter {
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  footer {
+    margin: 0 20px; 
+  }
+  footer .logo {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* @media (max-width: 477px) { 
   .section-p1 {
     padding: 20px
   }
@@ -660,4 +746,4 @@ footer .copyright {
   footer .logo {
     margin-bottom: 10px;
   }
-}
+} */
