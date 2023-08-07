@@ -213,12 +213,12 @@ body {
   padding: 0 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
-  border-radius: 4px;
   margin: 15px 0;
   cursor: pointer;
 }
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  /* transform: scale(1.01); */
 }
 #feature .fe-box h3 {
   display: inline-block;
@@ -240,14 +240,14 @@ body {
   flex-wrap: wrap;
 }
 #product1 .product {
-  width: 23%;
-  min-width: 250px;
+  width: 20%;
+  /* min-width: 250px; */
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  border: 1px solid rgb(149, 162, 134,0.2);
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px 0;
+  margin: 15px 10px;
   transition: 0.2s ease;
   position: relative;
 }
@@ -261,8 +261,13 @@ body {
 #product1 .product img {
   width: 100%;
   border-radius: 20px;
-  border: 1px solid #cce7d0;
+  position: relative;
 }
+#product1 .product img:hover {
+  transform: scale(1.3);
+  z-index: 999;
+}
+
 #product1 .product .description {
   text-align: start;
   padding: 10px 0;
@@ -296,7 +301,7 @@ body {
   /* background-image: url(); is supposed to have a background image but for now we use background color */
   background-size: cover;
   background-position: center;
-  background: rgba(197, 184, 175, 0.5);
+  background: #D8E4E3;
 }
 #banner h4 {
   color: #222;
@@ -335,10 +340,11 @@ body {
   background-size: cover;
   background-position: center;
   padding: 30px;
+  border-radius: 4px;
 }
+
 #sm-banner .banner-box2 {
   background-image: url(/Images/Banners/img3.jpg );
-  /* background: linear-gradient(331deg, rgba(0,0,0,1) 0%, rgba(8,129,120,1) 100%); */
 }
 #sm-banner h4 {
   color: #fff;
@@ -403,7 +409,7 @@ button.white:hover {
   flex-wrap: wrap;
   align-items: center;
   background-image: url();
-  background: rgba(197, 184, 175, 0.5);
+  background: #D8E4E3;
 }
 #newsletter h4 {
   font-size: 22px;
