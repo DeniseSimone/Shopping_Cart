@@ -14,3 +14,5 @@ if (close) { /* if nabvar is clicked */
     nav.classList.remove('active');   
   })
 }
+
+/* PAGINATION */

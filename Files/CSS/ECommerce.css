@@ -292,6 +292,33 @@ body {
   font-weight: 700;
   color: #088178;
 }
+#product1 #pagination {
+  width: 100%;
+  margin: 25px auto 0;
+}
+#product1 #pagination a {
+  text-decoration: none;
+  text-align: center;
+  color: #222;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+#product1 #pagination a:not(:nth-child(1), :nth-child(8)):hover {
+  border: 1px solid #C5B8AF;
+  background: #C5B8AF;
+  color: #fff;
+}
+#product1 #pagination a.active {
+  border: 1px solid #C5B8AF;
+  background: #C5B8AF;
+  color: #fff;
+}
+
 
 #banner {
   display: flex;
@@ -335,13 +362,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url(/Images/Banners/img2.jpg);
-  /* background: linear-gradient(146deg, rgba(242,205,135,1) 2%, rgba(247,155,26,1) 45%); */  
+  width: 100%;  
   min-width: 580px;
   height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 30px;
-  border-radius: 4px;
 }
 
 #sm-banner .banner-box2 {
@@ -380,7 +406,7 @@ button.white:hover {
   justify-content: center;
   align-items: flex-start;
   background-image: url(/Images/Banners/img7.jpg);
-  min-width: 30%;
+  width: 32%;
   height: 30vh;
   background-size: cover;
   background-position: center;
@@ -601,7 +627,8 @@ footer .copyright {
     padding: 0 40px;
   }
   #banner3 .banner-box {
-    width: 28%;
+    width: 32%;
+    text-align: center;
   }
 
   #newsletter .form {
