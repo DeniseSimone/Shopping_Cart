@@ -487,7 +487,7 @@ footer .col {
   margin-bottom: 20px;
 }
 footer .logo {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 footer h4 {
   font-size: 14px;
@@ -704,73 +704,3 @@ footer .copyright {
     margin-bottom: 10px;
   }
 }
-
-
-/* @media (max-width: 477px) { 
-  .section-p1 {
-    padding: 20px
-  }
-  #header {
-    padding: 10px 30px;
-  }
-  #navbar #close {
-    font-size: 20px;
-  }
-  .logo {
-    width: 60px;
-  }
-  #mobile #mobile-cart, #mobile #bar {
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 38px
-  }
-  h2 {
-    font-size: 32px;
-  }
-  #hero {
-    padding: 0 20px;
-    align-items: center;
-  }
-  #feature {
-    justify-content: space-around;
-  }
-  #feature .fe-box {
-    width: 155px;
-    margin: 0 0 15px 0;
-  }
-  #product1 p {
-    margin: 0 auto;
-  }
-  #product1 .product {
-    width: 100%;
-  }
-  #banner {
-    height: 40vh;
-    margin: 20px 0;
-  }
-  #banner h2 {
-    line-height: 50px;
-  }
-  #sm-banner {
-    row-gap: 20px;
-  }
-  #banner3 {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-  #banner3 .banner-box {
-    width: 100%;
-  }
-  #newsletter {
-    text-align: center;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  footer {
-    margin: 0 20px; 
-  }
-  footer .logo {
-    margin-bottom: 10px;
-  }
-} */

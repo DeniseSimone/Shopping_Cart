@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="ECommerce.css">
+  <link rel="stylesheet" href="/Files/CSS/shop.css">
   <!-- PAGE ICON -->
   <link rel="shortcut icon" href="image.jpg" type="image/x-icon"> 
   <link rel="icon" type="image/jpg" href="image.jpg" sizes="16x16">
@@ -20,8 +20,91 @@
 
 </head>
 <body> 
-    <h1>Shop</h1>
+  <section id="header">
+    <a href="#"><img src="/Images/Logo/logo2.png" class="logo" alt="" width="110"></a>
+    
+    <div>
+      <ul id="navbar">
+        <li><a href="ECommerce.html">Home</a></li>
+        <li><a class="active" href="/Files/HTML/shop.html">Shop</a></li>
+        <li><a href="/Files/HTML/blog.html">Blog</a></li>
+        <li><a href="/Files/HTML/about.html">About</a></li>
+        <li><a href="/Files/HTML/contact.html">Contact</a></li>
+        <li><a href="/Files/HTML/cart.html" id="cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
 
-    <a href="/Files/HTML/ECommerce.html">Main Page</a>
+    <div id="mobile">
+      <a href="/Files/HTML/cart.html"><i class="fa-solid fa-bag-shopping" id="mobile-cart"></i></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get e-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+      <input type="text" id="" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="col">
+      <img class="logo" src="/Images/Logo/logo2.png" alt="" width="90">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 562Wellington Road, Street 32, San Franciso</p>
+      <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 12345 6780</p>
+      <p><strong>Hours:</strong> 10.00 - 18:00, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="/Images/Pay/download-on-app-store-white-removebg-noborder.png" alt="download">
+        <img src="/Images/Pay/get-it-on-google-play-white-removebg-noborder.png" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="/Images/Pay/payment-gateway-removebg.png" alt="" width="150">
+    </div>
+
+    <div class="copyright">
+      <p>@2023 DSCBC - HTML CSS Ecommerce Template</p>
+    </div>
+  </footer>
+
+  <script src="/Files/JavaScript/ECommerce.js"></script>
 </body>
 </html>
